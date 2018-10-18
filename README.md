@@ -11,7 +11,7 @@
 
 
 
-### **Team**
+## **Team**
 
 **[Charles Belpois](https://github.com/charles-mahaco)** >> *made the gmail API work and send emails*
 
@@ -25,7 +25,7 @@
 
 
 
-### **What_can_you_do_with_this_code?**
+## **What_can_you_do_with_this_code?**
 
 This code allows you to **scrap the emails of the townhalls of several French administrations.**
 
@@ -37,25 +37,27 @@ You can **send a tweet to the administrations** to remind them of the email you 
 
 
 
-### **How_to_use**
+## **How_to_use**
 
 1.  `Git clone` our repository
+
 2.  `Bundle install`our gems
+
 3.   `Ruby app.rb` and follow instructions
 
 ***Careful!***
 
-4.  - In order to use google spreadsheet features, gmail features, twitter features and Json, you need to paste your own .env and config.json files into the repository
+4.  In order to use google spreadsheet features, gmail features, twitter features and Json, you need to paste your own .env and config.json files into the repository
 
-5.  **- In Json_scrapper.rb**, make sure you change the path to fit your own computer path
+5.  **In Json_scrapper.rb**, make sure you change the path to fit your own computer path
 
-6.  **- In csv.rb**, make sure you change the path to fit your own computer path AND change the spreadsheet file name to your own
+6.  **In csv.rb**, make sure you change the path to fit your own computer path AND change the spreadsheet file name to your own
 
-7.  **- In spreadsheet_scrapper.rb**, make sure you change the ID of the google spreadsheet to reflect the spreadsheet you want to copy your data into.
+7.  **In spreadsheet_scrapper.rb**, make sure you change the ID of the google spreadsheet to reflect the spreadsheet you want to copy your data into.
 
 
 
-### **Files**
+## **Files**
 
 ````    
 Teamrepo
