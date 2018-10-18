@@ -8,7 +8,11 @@ require 'dotenv'
 Dotenv.load('mdp.env')
 $:.unshift File.expand_path("./../db", __FILE__)
 
-json = File.read('/home/charles/Desktop/jeudi3/projet/TeamRepo/db/emails.JSON')
+class Mailer
+
+  def initialize
+
+json = File.read('/Users/marie-charlotte/Documents/Code/The_Hacking_Project/Semaine_3/day4_Scrapping_email_sending/TeamRepo/db/emails.JSON')
 obj = JSON.parse(json)
 
 OOB_URI = 'urn:ietf:wg:oauth:2.0:oob'.freeze
@@ -16,6 +20,8 @@ APPLICATION_NAME = 'Gmail API Ruby Quickstart'.freeze
 CREDENTIALS_PATH = 'credentials.json'.freeze
 TOKEN_PATH = 'token.yaml'.freeze
 SCOPE = Google::Apis::GmailV1::AUTH_GMAIL_READONLY
+end
+
 
 def authorize
   client_id = Google::Auth::ClientId.from_file(CREDENTIALS_PATH)
@@ -36,6 +42,7 @@ def authorize
 end
 
 
+def mail()
 
 # Initialize the API
 service = Google::Apis::GmailV1::GmailService.new
@@ -52,7 +59,7 @@ puts "A quel nom veux-tu envoyer les mails?"
 nom = gets.chomp
 
 obj.each do |k,v|
-	
+
 message = "Bonjour,
 Je m'appelle #{nom}, je suis élève à The Hacking Project, une formation au code gratuite, sans locaux, sans sélection, sans restriction géographique. La pédagogie de ntore école est celle du peer-learning, où nous travaillons par petits groupes sur des projets concrets qui font apprendre le code. Le projet du jour est d'envoyer (avec du codage) des emails aux mairies pour qu'ils nous aident à faire de The Hacking Project un nouveau format d'éducation pour tous.
 
@@ -67,4 +74,7 @@ email = gmail.compose do
  body "#{message}"
 end
 gmail.deliver(email)
+end
+end
+
 end
