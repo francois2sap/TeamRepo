@@ -12,8 +12,8 @@ class Spreadsheet
 
   b = 1
   hash.each do |k, v|
-    ws[b, 1] = k
-    ws[b, 2] = v[0]
+    ws[b, 2] = k
+    ws[b, 1] = v[0]
     ws[b, 3] = v[1]
     ws.save
     b += 1

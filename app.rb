@@ -21,6 +21,6 @@ require 'Json_scrapper.rb'
 
 hash_dep = ["http://www.annuaire-des-mairies.com/seine-saint-denis.html", "http://www.annuaire-des-mairies.com/hauts-de-seine.html", "http://www.annuaire-des-mairies.com/val-de-marne.html"]
 
-# Jason.json_scrapper(hash_dep)
+# Json.new.scrap(hash_dep)
 # Spreadsheet.new.write(Scrapper.new.result(hash_dep))
- Csv.new.convert
+# Csv.new.convert
