@@ -8,7 +8,7 @@ require 'dotenv'
 Dotenv.load('mdp.env')
 $:.unshift File.expand_path("./../db", __FILE__)
 
-json = File.read('/home/fde-sapo/Documents/THP/Semaine_3/TeamRepo/db/emails.JSON')
+json = File.read('~//db/emails.JSON')
 obj = JSON.parse(json)
 
 OOB_URI = 'urn:ietf:wg:oauth:2.0:oob'.freeze
