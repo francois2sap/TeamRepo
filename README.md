@@ -53,23 +53,31 @@ You can **send a tweet to the administrations** to remind them of the email you 
 
 ### **Files**
 
-````
-|-  app.rb 
-|
-|-  Gemfile
-|
-|-  lib
-|    |-  Scrapper.rb 
-|    |-  spreadsheet_scrapper.rb 
-|    |-  Csv
-|    |    |- csv.rb 
-|    |    |- config.json 
-|    |
-|    |-  Json_scrapper
-|         |- Json_scrapper.rb 
-|         |- config.json 
-|    
-|-  db
-    |-  emails.csv
-    |-  emails.Json 
+````    
+Teamrepo
+├── .gitignore
+├── .env
+├── README.md
+├── Gemfile
+├── Gemfile.lock
+├── app.rb
+├── db
+│   ├── emails.json
+│   └── emails.csv
+└── lib
+    ├── app
+    │   ├── Scrapper.rb
+    │   ├── spreadsheet_scrapper.rb
+    │   ├── CSV.rb
+    │   │   ├── csv.rb
+    │   │   └── config.json (put your own here)
+    │   │
+    │   └── Json_scrapper.rb
+    │   │   ├── Json_scrapper.rb
+    │   │   └── config.json (put your own here)
+    │   │    
+    └── views
+        ├── done.rb
+        └── index.rb
+        
  ````
