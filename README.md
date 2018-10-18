@@ -12,11 +12,11 @@
 
 ### **Team**
 
-**Charles Belpois** >> *made the gmail API work and send emails*
+**[Charles Belpois](https://github.com/charles-mahaco)** >> *made the gmail API work and send emails*
 
-**François De Saporta** >> *project architecture and branches*
+**[François De Saporta](https://github.com/francois2sap/)** >> *project architecture and branches*
 
-**Marie-Charlotte Le Morvan** >> *data scrapping (Json + google drive) + readme*
+**[Marie-Charlotte Le Morvan](https://github.com/Spelmo)** >> *data scrapping (Json + google drive) + readme*
 
 **Lionel Renard** >> *Twitter bot*
 
