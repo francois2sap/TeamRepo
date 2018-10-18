@@ -2,6 +2,11 @@ require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
 require 'json'
+require 'gmail'
+require 'json'
+require 'pp'
+
+
 
 $:.unshift File.expand_path("./../lib/apps/", __FILE__)
 require 'scrapper.rb'
@@ -22,8 +27,6 @@ $:.unshift File.expand_path("./../lib/apps/Json_scrapper/", __FILE__)
 require 'Json_scrapper.rb'
 
 # début du code
-
-
 
 hash_dep = ["http://www.annuaire-des-mairies.com/seine-saint-denis.html", "http://www.annuaire-des-mairies.com/hauts-de-seine.html", "http://www.annuaire-des-mairies.com/val-de-marne.html"]
 
