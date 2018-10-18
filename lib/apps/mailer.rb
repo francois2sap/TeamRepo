@@ -6,7 +6,8 @@ class Mailer
 
   def initialize
 
-	json = File.read('/home/fde-sapo/Documents/THP/Semaine_3/TeamRepo/db/emails.JSON')
+	json = File.read('../../db/emails.JSON')
+
 
 	@obj = JSON.parse(json)
 end
