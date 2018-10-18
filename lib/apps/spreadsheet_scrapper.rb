@@ -1,5 +1,5 @@
 require "google_drive"
-
+#sert a remplir le GoogleSheet avec les donnees du Hash
 
 class Spreadsheet
 
