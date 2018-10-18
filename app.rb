@@ -7,6 +7,9 @@ $:.unshift File.expand_path("./../lib/apps/", __FILE__)
 require 'scrapper.rb'
 
 $:.unshift File.expand_path("./../lib/apps/", __FILE__)
+require 'mailer.rb'
+
+$:.unshift File.expand_path("./../lib/apps/", __FILE__)
 require 'Bot_twitter.rb'
 
 $:.unshift File.expand_path("./../lib/apps/", __FILE__)
@@ -43,7 +46,7 @@ if a == '2' then
   if b == "y" then Csv.new.convert end
   end
 
-if a == '3' then end
+if a == '3' then Mailer.new.mail end
 
 if a == '4' then Tweet.new.follow(Tweet.new.search) end
 

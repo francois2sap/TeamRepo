@@ -47,13 +47,15 @@ You can **send a tweet to the administrations** to remind them of the email you 
 
 ***Careful!***
 
-4.  In order to use google spreadsheet features, gmail features, twitter features and Json, you need to paste your own .env and config.json files into the repository
+4.  In order to use google spreadsheet features, gmail features, twitter features and Json, you need to paste your own .env and config.json files into the repository.
 
-5.  **In Json_scrapper.rb**, make sure you change the path to fit your own computer path
+5.  **In Json_scrapper.rb**, make sure you change the path to fit your own computer path.
 
-6.  **In csv.rb**, make sure you change the path to fit your own computer path AND change the spreadsheet file name to your own
+6.  **In csv.rb**, make sure you change the path to fit your own computer path AND change the spreadsheet file name to your own.
 
 7.  **In spreadsheet_scrapper.rb**, make sure you change the ID of the google spreadsheet to reflect the spreadsheet you want to copy your data into.
+
+8.  **In mailer.rb**, make sure you change the path to fit your own computer path.
 
 
 
@@ -74,6 +76,7 @@ Teamrepo
     ├── app
     │   ├── Scrapper.rb
     │   ├── spreadsheet_scrapper.rb
+    │   ├── mailer.rb
     │   ├── CSV.rb
     │   │   ├── csv.rb
     │   │   └── config.json (put your own here)
@@ -95,6 +98,8 @@ Teamrepo
  lib >> app >> scrapper. rb = scraps townhall emails and put them in an hash
 
  lib >> app >> Spreadsheet_scrapper.rb = puts emails in a google sheet
+ 
+ Lib >> app >> mailer.rb = sends emails to al townhalls
 
  lib >> app >> CSV >> CSV.rb = downloads google sheet into csv file
 
