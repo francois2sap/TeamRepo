@@ -12,17 +12,15 @@ require 'spreadsheet_scrapper.rb'
 $:.unshift File.expand_path("./../csv/", __FILE__)
 require 'csv.rb'
 
+$:.unshift File.expand_path("./../Json_scrapper/", __FILE__)
+require 'Json_scrapper.rb'
+
 # début du code
 
 
-def json_scrapper(hash)
-  File.open("/Users/marie-charlotte/Documents/Code/The_Hacking_Project/Semaine_3/day4_Scrapping_email_sending/TeamRepo/db/emails.JSON", "w") do |f|
-    f.write((Scrapper.new.result(hash)).to_json)
-  end
-end
 
 hash_dep = ["http://www.annuaire-des-mairies.com/seine-saint-denis.html", "http://www.annuaire-des-mairies.com/hauts-de-seine.html", "http://www.annuaire-des-mairies.com/val-de-marne.html"]
 
-# json_scrapper(hash_dep)
+# Jason.json_scrapper(hash_dep)
 # Spreadsheet.new.write(Scrapper.new.result(hash_dep))
  Csv.new.convert
