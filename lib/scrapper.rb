@@ -29,7 +29,7 @@ end
 
 # fonction qui recupere les url de toutes les pages ville et y applique la fonction
 # ci-dessus pour les mettre dans un hash.
-def perform(hash_dep)
+def result(hash_dep)
   hash = {}
   hash_dep.each do |i|
     doc = Nokogiri::HTML(open(i))
