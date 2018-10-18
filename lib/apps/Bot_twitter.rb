@@ -44,5 +44,3 @@ def follow(arr)
 end
 
 end
-
-Tweet.new.follow(Tweet.new.search)

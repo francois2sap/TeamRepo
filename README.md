@@ -85,20 +85,17 @@ Teamrepo
     └── views
         ├── done.rb
         └── index.rb
-        
+
  ````
- 
+
  app.rb = launcher
- 
+
  db >> mails.json & emails.csv = databases of townhall emails
- 
+
  lib >> app >> scrapper. rb = scraps townhall emails and put them in an hash
-  
+
  lib >> app >> Spreadsheet_scrapper.rb = puts emails in a google sheet
-            
+
  lib >> app >> CSV >> CSV.rb = downloads google sheet into csv file
-            
+
  lib >> app >> Jason_scrapper >> Json_scrapper.rb = puts scrapper.rb hash into a Json file
-            
- 
- 

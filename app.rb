@@ -7,6 +7,9 @@ $:.unshift File.expand_path("./../lib/apps/", __FILE__)
 require 'scrapper.rb'
 
 $:.unshift File.expand_path("./../lib/apps/", __FILE__)
+require 'Bot_twitter.rb'
+
+$:.unshift File.expand_path("./../lib/apps/", __FILE__)
 require 'spreadsheet_scrapper.rb'
 
 $:.unshift File.expand_path("./../lib/apps/csv/", __FILE__)
@@ -15,20 +18,18 @@ require 'csv.rb'
 $:.unshift File.expand_path("./../lib/apps/Json_scrapper/", __FILE__)
 require 'Json_scrapper.rb'
 
-$:.unshift File.expand_path("./../lib/apps/", __FILE__)
-require 'Bot_twitter.rb'
-
 # début du code
 
 
 
 hash_dep = ["http://www.annuaire-des-mairies.com/seine-saint-denis.html", "http://www.annuaire-des-mairies.com/hauts-de-seine.html", "http://www.annuaire-des-mairies.com/val-de-marne.html"]
 
-puts "Welcome! what do you want to do?"
+puts "what do you want to do?"
 puts " 1. get the emails from 92, 93 & 94 and put them in a Json file"
 puts " 2. put them in a google spreadsheet"
+puts " 3. Spam townhalls via email"
 puts " 4. fetches tweeter townhall users and follows them"
-puts " 5. Close application"
+puts " 5. Exit application"
 a = gets.chomp
 
 unless ['1', '2', '3', '4', '5'].include?(a); puts "wrong input" end
