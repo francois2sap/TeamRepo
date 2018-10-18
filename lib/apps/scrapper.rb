@@ -18,7 +18,7 @@ def get_the_email_of_a_townhal_from_its_webpage(url)
   	 return node.text
   	end
 end
-
+# fonction qui recupere le code postal de chaque ville
 def get_the_dep_of_a_townhal_from_its_webpage(url)
   doc = Nokogiri::HTML(open(url))
   email_adress = ''
