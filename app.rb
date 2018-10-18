@@ -3,16 +3,16 @@ require 'nokogiri'
 require 'open-uri'
 require 'json'
 
-$:.unshift File.expand_path("./../lib", __FILE__)
+$:.unshift File.expand_path("./../lib/apps/", __FILE__)
 require 'scrapper.rb'
 
-$:.unshift File.expand_path("./../spreadsheet_scrapper/", __FILE__)
+$:.unshift File.expand_path("./../lib/apps/", __FILE__)
 require 'spreadsheet_scrapper.rb'
 
-$:.unshift File.expand_path("./../csv/", __FILE__)
+$:.unshift File.expand_path("./../lib/apps/csv/", __FILE__)
 require 'csv.rb'
 
-$:.unshift File.expand_path("./../Json_scrapper/", __FILE__)
+$:.unshift File.expand_path("./../lib/apps/Json_scrapper/", __FILE__)
 require 'Json_scrapper.rb'
 
 # début du code
@@ -27,7 +27,7 @@ puts " 2. put them in a google spreadsheet"
 a = gets.chomp
 
 if a == 1 then Json.new.scrap(hash_dep) end
-  
+
 if a == 2 then
   Spreadsheet.new.write(Scrapper.new.result(hash_dep))
   puts "Do you want to downlad a csv version of it?(y/n)"
