@@ -43,7 +43,7 @@ You can **send a tweet to the administrations** to remind them of the email you 
 
 2.  `Bundle install`our gems
 
-3.   `Ruby app.rb` and follow instructions
+3.  `Ruby app.rb` and follow instructions
 
 ***Careful!***
 
@@ -87,3 +87,18 @@ Teamrepo
         └── index.rb
         
  ````
+ 
+ app.rb = launcher
+ 
+ db >> mails.json & emails.csv = databases of townhall emails
+ 
+ lib >> app >> scrapper. rb = scraps townhall emails and put them in an hash
+  
+            >> Spreadsheet_scrapper.rb = puts emails in a google sheet
+            
+            >> CSV >> CSV.rb = downloads google sheet into csv file
+            
+            >> Jason_scrapper >> Json_scrapper.rb = puts scrapper.rb hash into a Json file
+            
+ 
+ 
