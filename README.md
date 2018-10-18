@@ -94,11 +94,11 @@ Teamrepo
  
  lib >> app >> scrapper. rb = scraps townhall emails and put them in an hash
   
-            >> Spreadsheet_scrapper.rb = puts emails in a google sheet
+ lib >> app >> Spreadsheet_scrapper.rb = puts emails in a google sheet
             
-            >> CSV >> CSV.rb = downloads google sheet into csv file
+ lib >> app >> CSV >> CSV.rb = downloads google sheet into csv file
             
-            >> Jason_scrapper >> Json_scrapper.rb = puts scrapper.rb hash into a Json file
+ lib >> app >> Jason_scrapper >> Json_scrapper.rb = puts scrapper.rb hash into a Json file
             
  
  
