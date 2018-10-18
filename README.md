@@ -53,21 +53,23 @@ You can **send a tweet to the administrations** to remind them of the email you 
 
 ### **Files**
 
-*  app.rb >> *launcher*
-
-*  Gemfile
-
-*  lib
-    *  Scrapper.rb >> *Scraps townhall emails*
-    *  spreadsheet_scrapper.rb >> *puts emails into spreadsheet*
-    *  Csv
-        *  csv.rb >> *download spreadsheet into csv format*
-        *  config.json >> *put your own config file here*
-
-    *  Json_scrapper
-        * Json_scrapper.rb >> *scraps emails into Json file*
-        * config.json >> *put your own config file here*
-
-*  db
-    *  emails.csv >> *email database in csv*
-    *  emails.Json >> *email database in Json*
+````
+|-  app.rb 
+|
+|-  Gemfile
+|
+|-  lib
+|    |-  Scrapper.rb 
+|    |-  spreadsheet_scrapper.rb 
+|    |-  Csv
+|    |    |- csv.rb 
+|    |    |- config.json 
+|    |
+|    |-  Json_scrapper
+|         |- Json_scrapper.rb 
+|         |- config.json 
+|    
+|-  db
+    |-  emails.csv
+    |-  emails.Json 
+ ````
