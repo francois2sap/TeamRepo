@@ -32,5 +32,3 @@ if a == 3 then Csv.new.convert end
 end
 
 hash_dep = ["http://www.annuaire-des-mairies.com/seine-saint-denis.html", "http://www.annuaire-des-mairies.com/hauts-de-seine.html", "http://www.annuaire-des-mairies.com/val-de-marne.html"]
-
-Spreadsheet.new.write(Scrapper.new.perform(hash_dep))
