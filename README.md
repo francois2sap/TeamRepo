@@ -1,40 +1,44 @@
 
-# **Welcome to our townhall email scrapper and mail sender**
+# **Welcome to our Ruby townhall email scrapper and mail sender**
 
 
 ## **Table of contents**
 
 1.  [Team](#Team)
-2.  [What can you do with this code?](#What can you do with this code?)
-3.  [How to use](#How to use)
+2.  [What can you do with this code?](#What_can_you_do_with_this_code?)
+3.  [How to use](#How_to_use)
 4.  [Files](#Files)
 
 
 ### **Team**
 
 **Charles Belpois** >> *made the gmail API work and send emails*
+
 **François De Saporta** >> *project architecture and branches*
+
 **Marie-Charlotte Le Morvan** >> *data scrapping (Json + google drive) + readme*
+
 **Lionel Renard** >> *Twitter bot*
+
 **Geoffroy Visquert** >> *Twitter bot*
 
 
-### **What can you do with this code?**
+### **What_can_you_do_with_this_code?**
 
-This code allows you to *scrap the emails of the townhalls of several French administrations.*
+This code allows you to **scrap the emails of the townhalls of several French administrations.**
 
-You can choose to *store the emails* in a Json file or in a Google_spreadsheet that you can also download as a CSV file.
+You can choose to **store the emails** in a Json file or in a Google_spreadsheet that you can also download as a CSV file.
 
-You can then *send an email to the whole database* using gmail.
+You can then **send an email to the whole database** using gmail.
 
-You can *send a tweet to the administrations* to remind them of the email you sent.
+You can **send a tweet to the administrations** to remind them of the email you sent.
 
 
-### **How to use**
+### **How_to_use**
 
 1.  `Git clone` our repository
 2.  `Bundle install`our gems
-3.   Run app.rb and follow instructions
+3.   `Ruby app.rb` and follow instructions
 
 ***Careful!***
 
